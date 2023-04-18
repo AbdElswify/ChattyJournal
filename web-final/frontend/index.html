@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Personality Bot</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <style>
+      main {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="center">
+      <form id="new-entry-form">
+        <div>
+          <header>
+            <img src="chatbot.png" alt="chatbot icon">
+            <h1>Personality Bot</h1>
+          </header>
+        </div>
+        <div>
+          <label for="personality">Choose a personality for the Bot:</label>
+          <select id="personality" name="personality">
+            <option value="happy">Happy Helios</option>
+            <option value="crazy">Crazy Cassidy</option>
+            <option value="angry">Angry Arnold</option>
+            <option value="depressed">Depressed Dave</option>
+            <option value="scared">Scared Sam</option>
+            <option value="disgusted">Disgusted Dean</option>
+            <option value="boring">Boring Borat</option>
+            <option value="chad">Chad Chad</option>
+          </select>
+        </div>
+        <div>
+          <div>
+            <label for="entry-message">Message</label>
+          </div>
+          <textarea id="entry-message" name="entry-message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+        <div id="bot-response"></div>
+      </form>
+    </main>
+  </body>
+</html>
